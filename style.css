@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box
+    
+
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/*header*/
+header{
+  display: flex;
+  
+    justify-content: space-between;
+    align-items: right;
+    
+    border-bottom: 2px solid rgba(219, 219, 219, 1) ;
+  
+    
+    background: white;
+    position: sticky;
+    top: 0;
+   
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    
+
+}
+.header-right-corner{
+    display: flex;
+    margin: 25px;
+}
+.header-right-corner i{
+    font-size: 30px;
+}
+
+header .left-corner-icons{
+    position: absolute;
+}
+
+header .logo{
+    
+    min-width: 250px;
+    height:80px;
+  
+    
+    padding: 2px;
+    
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+header .logo i{
+    height: 100%;
+ text-align: left;
+   
+    margin-left: 10px;
+    font-size: 70px;
+
+}
+header .logo i span{
+    padding-bottom: 5px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+header .search-box{
+   
+    width: 350px;
+    height: 60px;
+    background:rgba(239, 239, 239, 1);
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+header .search-box input{
+    height: 30px;
+    border: none;
+    outline: none;
+    background: rgba(239, 239, 239, 1);
+    padding-left: 10px;
+    font-size: 15px;
+    color: #8e8e8e;
+
+}
+
+header nav ul {
+   list-style: none;
+    display: flex;
+
+}
+
+header nav ul li{
+    margin-right: 20px;
+    justify-content: center;
+}
+header nav ul li :last-child{
+    margin-right: 0;
+}
+
+header nav ul li a img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header nav ul li a i{
+   font-size: 22px;
+   color: rgba(38, 38, 38, 1);
+
+
+}
+
+section{
+    padding: 30px 18%;
+    background-color: #fafafa;
+    display: flex;
+
+}
+
+.left-side{
+    width :65%
+}
+
+.story{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3px;
+    margin-left: 21px;
+  
+
+}
+.story .stories{
+    width: 20%;
+}
+
+.story .stories a img{
+    border-radius: 50%;
+    border: 2px solid #c62d8f;
+    padding: 1px;
+    object-fit: cover;
+}
+
+.story .stories p{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #262626;
+
+}
+
+
+
+
+/*post */
+
+.posts{
+    width: 100%;
+    margin: 15px;
+    background-color: white;
+    border: 1px solid rgba(219, 219, 219 ,1);
+    border-radius: 3px;
+}
+
+.posts .post-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+}
+
+.posts .post-title .post-left{
+    display: flex;
+    align-items: center;
+
+}
+
+.posts .post-title .post-left .image{
+    margin-right: 15px;
+}
+.posts .post-title .post-left .image img{
+  
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.posts .post-title .post-left .details .name{
+    padding-bottom: 2px;
+    font-weight: bold;
+
+}
+
+.posts .post-content img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.posts .post-footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.posts .post-footer .likes-share-comment{
+    font-size: 22px;
+    margin-right: 10px;
+    padding: 16px;
+}
+
+.posts .post-footer .save{
+    font-size: 22px;
+
+}
+
+.posts .post-footer-content{
+    padding: 0 16px 16px 16px;
+}
+.posts .post-footer-content p{
+    margin-bottom: 3px;
+}
+.posts .post-footer-content .likes{
+    margin-bottom: 8px;
+}
+
+.posts .post-footer-content .name{
+    font-weight: 600;
+    color: #000000;
+}
+
+.posts .post-footer-content .posting-time{
+    font-size: 20px;
+    margin-top: 6px;
+
+}
+
+.posts .add-comments{
+    padding: 16px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posts .add-comments .left-side{
+    display: flex;
+    align-items: center;
+
+}
+
+.posts .add-comments .left-side i{
+    font-size: 22px;
+    margin-right: 15px;
+
+}.posts .add-comments .left-side input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    
+
+}
+
+
+
+.right-side{
+    width: 25%;
+    height: 100%;
+   
+    position: fixed;
+    right: 100px;
+    margin-left: 5px;
+   
+   
+
+}
+
+.right-side .profile-title{
+    display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+   
+    
+
+}
+
+.right-side .profile-title .profile-left{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+.right-side .profile-title .profile-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid  #fd06f5;
+
+}
+
+.right-side .profile-title .profile-left .details p{
+    padding-bottom: 5px;
+    padding-right: 4px;
+    font-size: 20px;
+}
+.suggestion-title .suggestion-left .details p{
+    font-size: 20px;
+}
+.profile-right{
+    margin: 20px;
+}
+
+.suggestions{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight:600;
+    color: #515151;
+    font-size: 20px;
+    
+    
+
+}
+.profile-right,.suggestion-right{
+    color: blue;
+    font-size: 20px;
+}
+
+.suggestion-right{
+    margin-left: 10px;
+    justify-content: right;
+}
+
+.suggestions p{
+    margin-right: 90px;
+    
+    text-overflow: ellipsis;
+
+}
+
+.suggestions p:last-child{
+    margin-right: 0;
+
+}
+
+.suggestion-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.suggestion-title .suggestion-left, .suggestion-right{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.suggestion-title .suggestion-left .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.suggestion-title .suggestion-left  .details .name{
+    padding-bottom: 3px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bottom-icons{
+    
+   
+   
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    
+    background: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    
+
+}
+
+
+
+
+
+.bottom-icons nav ul {
+   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
+
+}
+
+.bottom-icons nav ul li{
+    margin-right: 20px;
+}
+.bottom-icons nav ul li :last-child{
+    margin-right: 0;
+}
+
+
+
+.bottom-icons nav ul li a i{
+   font-size: 25px;
+   color: rgba(38, 38, 38, 1);
+
+
+}
+.bottom-icons nav ul li a img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.like-button{
+    border: none;
+    font-size: 22px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.bottom-icons{
+    
+   
+   
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    
+    background: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    
+
+}
+
+
+
+.main{
+    display: grid;
+  
+  
+}
+.left-corner-icons{
+   
+  
+    
+    min-width: 250px;
+    padding-left: 5px;
+    position: fixed;
+    left: 0;
+    border-right: 1px solid rgb(209, 209, 209);
+    height: 100%;
+    
+}
+
+.left-corner-icons nav ul {
+
+   list-style: none;
+
+ 
+  justify-content: space-between;
+  align-items: center;
+  
+
+  
+ 
+
+}
+
+.left-corner-icons nav ul li{
+   justify-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    margin-top: 15px;
+}
+
+
+
+.left-corner-icons nav ul li a i{
+   font-size: 40px;
+   color: rgba(38, 38, 38, 1);
+   margin-top: 30px;
+
+
+}
+.left-corner-icons nav ul li .text{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+
+.left-corner-icons nav ul li a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+    border: 2px solid  ;
+}
+
+@media(max-width:1360px){
+    section .left-side{
+        width: 100%;
+    }
+    section .right-side{
+        display: none;
+    }
+    .left-corner-icons{
+       min-width: 200px; 
+    }
+
+   
+}
+
+@media(max-width:1192px){
+    header{
+        
+        width: 100%;
+
+    }
+    .left-corner-icons .text{
+        display: none;
+     }
+     .left-corner-icons{
+        min-width:80px;
+     }
+    
+    
+    section .right-side{
+        display: none;
+    }
+    .logo i{
+        display: none;
+       
+    }
+    .logo .insta-logo{
+        width: 100%;
+        height: 100%;
+    }
+   
+
+
+}
+
+@media(max-width:768px){
+    header .search-box{
+        display: none;
+    }
+    section{
+        padding: 30px 20px;
+    }
+    .left-corner-icons{
+        display: none;
+    }
+    
+   
+
+}
+
+@media(max-width:576px){
+    .story .stories{
+        width: 25%;
+    }
+    header nav ul li{
+        margin-right:10px ;
+    }
+}
+@media(min-width:768px){
+    .bottom-icons{
+        display: none;
+    }
+    .header-right-corner{
+        display: none;
+    }
+    
+    
+
+}
+
+@media(min-width:1192px){
+    .insta-logo{
+        display: none;
+        margin: 0;
+    }
+    .logo i{
+        margin-left: 0;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
